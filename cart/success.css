@@ -1,0 +1,39 @@
+body{
+    margin: 0;
+}
+
+.than{
+    /* position: absolute; */
+    /* z-index: 10; */
+    width: 100%;
+    display:block;
+    background-image: url(../icons/please-wait.gif);
+    height: 100vh;
+   background-position: center;
+   background-repeat: no-repeat; 
+   background-size: 20 10;
+}
+
+.thank{
+    /* position: absolute; */
+    /* z-index: 10; */
+    width: 100%;
+    background-image: url(../icons/succes.gif);
+    display:none;
+    height: 100vh;
+   background-position: center;
+   background-repeat: no-repeat; 
+   background-size: 20 10;
+}
+
+.thanks{
+    /* position: absolute; */
+    background-image: url(../icons/thankyou.gif);
+    /* z-index: 20; */
+    width: 100%;
+    display:none;
+    height: 100vh;
+   background-position: center;
+   background-repeat: no-repeat; 
+   background-size: 20 10;
+}

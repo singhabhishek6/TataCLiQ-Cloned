@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proceed with Payment</title>
+    <link rel="icon" href="unnamed.png" type="png">
+    <link rel="stylesheet" href="payment.css">
+</head>
+<body>
+  <div class="ani"></div>
+    <div class="wrap">
+        <!--  Navbar starts  -->
+        <div class="nav">
+            <div class="logo">
+                <img src="images/screencapture-tatacliq-2021-05-28-21_43_50.png" alt="">
+            </div>
+            <div class="accounts">
+                <div class="profile-logo">
+                    <div>
+                    <img src="images/profile.39b59dc38fd3.png" alt="" style="width: 25px;height: 25px;">
+                    </div>
+                    <p class="UserName">Login / SignUp</p>
+                    <img src="images/down-arrow-white.7d24202a27ce.svg" alt="">
+                </div>
+            </div>
+        </div>
+      <!--  Navbar Ends  -->
+
+      <div class="keep">
+        <div class="speech-bubble">
+          <div class="account" onclick="ope()">
+            <img src="icons/profileicon.png" alt="..." style="width: 25px;">My account
+          </div>
+          <div class="account" onclick="ope()">
+            <img src="icons/order-history.a92cd34e19fa.svg" alt="..." style="width: 20px; margin-left: 4px;">Order History
+          </div>
+          <div class="account" onclick="ope()">
+            <img src="icons/whist.svg" alt="..." style="width: 15px; margin-left: 7px;">Saved List
+          </div>
+          <div class="account" onclick="ope()">
+            <img src="icons/alert.89aa376e9ac0.svg" alt="..."style="width: 15px; margin-left:7px ">Alert & Coupon
+          </div>
+          <div class="account" onclick="ope()">
+            <img src="icons/giftCards.c9b393b81026.svg" alt="..." style="width: 20px; margin-left: 1px;">Gift Card
+          </div>
+          <div class="account" onclick="ope()">
+            <img src="icons/cliqCash.89de362374b9.svg" alt="..." style="width: 15px; margin-left: 5px;" >CLiQ Cash
+          </div>
+        </div>
+    </div>
+<br>
+<br>
+   <h1>Checkout</h1>
+    <div class="product-info">
+        <div class="product-side">
+          <div class="address-side">
+              <div class="title">
+                  <img src="icons/greenchek.svg" alt="">Delivery Address
+              </div>
+              <div class="home">
+               <h4>Home</h4>
+               <p class="ad">Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+               <p class="ci">Aurangabad</p>
+               <p class="st">Bihar,<p class="pi">824101</p></p>
+               <p class="ph">7992245309</p>
+              </div>
+          </div>    
+          <div class="status">
+            <div class="title">
+                <img src="icons/greenchek.svg" alt="">Delivery Mode
+            </div>
+            <div class="home f" id="push">
+               
+            </div>
+          </div>    
+          <div class="pay">
+            <div class="title">
+                <img src="icons/greenchek.svg" alt="">Payment Mode
+            </div>
+            <div class="pat-meth">
+              <div class="debit">
+               <div class="tag">
+                <img src="icons/debit-card.6e017e5ce6cd.svg" alt=""> Debit Card
+               </div>
+                <div class="inputs">
+                  <div class="left">
+                    <input type="text" placeholder="Card Number">
+                    <input type="text" placeholder="Name on Card">
+                  </div>
+                  <div class="right">
+                    <div class="select" >
+                      <select name="month" id="month">
+                        <option value="" disabled selected>Expiry Month</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                      </select>
+
+                      <select name="year" id="year">
+                        <option value="" disabled selected>Expiry Year</option>
+                        <option value="2021">2021</option>
+                        <option value="2022">2022</option>
+                        <option value="2023">2023</option>
+                        <option value="2024">2024</option>
+                        <option value="2025">2025</option>
+                        <option value="2026">2026</option>
+                        <option value="2027">2027</option>
+                        <option value="2028">2028</option>
+                        <option value="2029">2029</option>
+                        <option value="2030">2030</option>
+                      </select>
+                    </div>
+                    <div style="display: flex; width: 100%;">
+                      <input type="text" name="cvv" id="cvv" placeholder="CVV">
+                      <div class="checkout" onclick="send()">Place order</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+              <br>
+              <br>
+        </div>
+        
+        <div class="price-side c">
+          <div class="calculation">
+            <div class="base">
+             
+             
+              <div class="price-des">
+                <div>Bag Total</div>
+                <div class="money">₹ <p class="total">13095.00</p></div>
+              </div>
+              <div class="price-des">
+               <div>Shipping Charge</div>
+               <div class="money free">FREE</div>
+             </div>
+             <div class="price-des">
+               <div>Bag Subtotal</div>
+               <div class="money">₹ <p class="total">13095.00</p></div>
+             </div>
+             <div class="price-des">
+               <div>Product Discount(s)</div>
+               <div class="money">-₹ <p id="dif" class="total">3420.00</p></div>
+             </div>
+             <div class="save">You will save ₹<div id="f2" style="display: inline;">3420.00</div> on this order</div>
+             <div class="line" style="margin-top: 30px;"></div>
+             <div class="total-check">
+               <div class="totals">Total Payable </div>
+               <div class="rs">₹<p id="tott">975</p>.00</div>
+             </div>
+            </div>
+          </div>
+        </div>
+      </div>
+       
+    </div>
+   
+<script src="payment.js"></script>
+</body>
+</html>
